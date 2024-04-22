@@ -27,8 +27,8 @@ const typeDefs = `
   }
 
     type Query {
-    lists: [List]!
-    list(email: String!): List
+      lists: [List]!
+      list(email: String!): List
     books: [Book]!
     blogs: [Blog]!
     videos: [Video]!

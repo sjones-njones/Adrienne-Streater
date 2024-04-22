@@ -7,5 +7,4 @@ module.exports = {
   Blog,
   Book,
   Video,
-  List
-  };
+  List  };
