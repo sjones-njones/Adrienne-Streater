@@ -1,5 +1,5 @@
 :root {
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family:'Consolas', 'Courier New', monospace, 'Voor', 'Open Sans', 'Work Sans', 'Life Savers';
   line-height: 1.5;
   font-weight: 400;
 
@@ -63,9 +63,8 @@ margin-left: 9%;
   color: black;
   cursor: pointer;
   display: inline-block;
-  font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-  font-size: 16px;
-  font-weight: 600;
+  font-family: 'life savers', -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-weight: bolder;
   line-height: 2.5;
   outline: transparent;
   padding: 0 1rem;
