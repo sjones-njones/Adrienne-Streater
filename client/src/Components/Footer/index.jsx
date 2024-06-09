@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { useMutation } from "@apollo/client";
 import { ADD_TO_LIST } from '../../../Utils/Mutations';
 import '../../Home.css';
+import '../../App.css';
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -42,8 +43,8 @@ const Footer = () => {
         className="flex-row justify-center justify-space-between-md align-center"
         onSubmit={handleOnSubmit}
       >
-        <h4 className='my-auto mx-auto'>Want to receive updates?</h4>
-        <div className="m-1 d-block">
+        <h4 className='my-auto fs-3 mx-auto lifeSavers fw-bolder'>Want to receive updates?</h4>
+        <div className=" mr-4 d-block">
           <input
             placeholder="Email Address"
             value={email}
@@ -53,7 +54,7 @@ const Footer = () => {
         </div>
 
         <div className="">
-          <button className="button-62" type="submit">
+          <button className="button-62 fs-5 ml-2" type="submit">
             Submit
           </button>
         </div>

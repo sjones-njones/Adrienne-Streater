@@ -6,11 +6,14 @@ import React from 'react';
 import { useRef } from "react";
 import emailjs from '@emailjs/browser';
 import Toast from 'react-bootstrap/Toast';
+import '../../App.css';
+import '../../Home.css';
+
 
 const Contact = () => {
   const showToastMessage = () => {
 
-    toast("We will get back to you shortly!"
+    toast("Thank you for your message! We will get back to you shortly!"
     );
   };
   const form = useRef()
@@ -18,8 +21,8 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_nqup4tv', 'template_3sps3i6', form.current, {
-      publicKey: 'VkcSxKO-vNCJO3T3-',
+    emailjs.sendForm('service_9x2z8im', 'template_5namvao', form.current, {
+      publicKey: 'qOPn5V6Z_82xgnHsv',
     })
       .then(
         () => {
@@ -32,27 +35,27 @@ const Contact = () => {
     e.target.reset()
   };
   return (
-    <div>
+     <div className='contactForm mx-auto text-start'>
 
      <div className=' sizingForm mx-auto text-start'>
             <Form ref={form} onSubmit={sendEmail}>
          <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-           <Form.Label className='fs-5 text-white'>Name</Form.Label>
+           <Form.Label className='fs-4 workSans text-black'>Name</Form.Label>
            <Form.Control className="border-black" type="name" name='name' />
          </Form.Group>
  
          <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-           <Form.Label className='text-white fs-5'>Email</Form.Label>
+           <Form.Label className='fs-4 workSans text-black'>Email</Form.Label>
            <Form.Control className="border-black" type="name" name='email' />
          </Form.Group>
          
          <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-           <Form.Label className='text-white fs-5'>Message</Form.Label>
+           <Form.Label className='fs-4 workSans text-black'>Message</Form.Label>
            <Form.Control className="border-black" as="textarea" rows={10} type="name" name='message' col="10" />
          </Form.Group>
-         <Button className="btn btn-lg" onClick={showToastMessage} type="submit">
+         <button className="button-62 fs-5" onClick={showToastMessage} type="submit">
            Send
-         </Button>
+         </button>
          <ToastContainer
          position='top-center'
          autoClose={5000}
@@ -63,7 +66,7 @@ const Contact = () => {
          pauseOnFocusLoss
          draggable
          pauseOnHover
-         theme='dark'
+         theme='light'
          className= "my-toast-container"
        />
        </Form>
