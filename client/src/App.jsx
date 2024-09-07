@@ -6,6 +6,8 @@ import {
 } from '@apollo/client';
 import { Outlet } from 'react-router-dom';
 import Footer from "./Components/Footer/index";
+import FooterII from "./Components/FooterII/index";
+
 import Background from './Components/Background';
 import NavTabs from './Components/NavTabs';
 import "./Home.css";
@@ -21,23 +23,20 @@ const client = new ApolloClient({
 });
 
 const App = () => (
-
-
-  
-  
   <ApolloProvider client={client}>
     <div>
       <main className="">
-      <NavTabs />
+        <NavTabs />
         <Outlet />
+        {/* <Footer /> */}
+        <FooterII />
         <Background />
 
-    <Footer />
       </main>
     </div>
   </ApolloProvider>
-  )
-   
-  
+)
+
+
 
 export default App;

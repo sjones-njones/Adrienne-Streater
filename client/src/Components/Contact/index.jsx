@@ -8,6 +8,9 @@ import emailjs from '@emailjs/browser';
 import Toast from 'react-bootstrap/Toast';
 import '../../App.css';
 import '../../Home.css';
+import Background from '../Background';
+import ParticlesBg from 'particles-bg';
+
 
 
 const Contact = () => {
@@ -34,17 +37,24 @@ const Contact = () => {
       );
     e.target.reset()
   };
+//   const color1 = ["#ECBC54", "#F9943B", "#F9728C"]
+// const color2 = ["#298C9B", "#A159F4"   ]
   return (
+    <div>
+      {/* <ParticlesBg color= {color1} num={4} type='circle' bg={true} />
+           <ParticlesBg color= {color2} num={1} type='circle' bg={true} />  */}
+
+  
      <div className='contactForm mx-auto text-start'>
 
      <div className=' sizingForm mx-auto text-start'>
             <Form ref={form} onSubmit={sendEmail}>
-         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+         <Form.Group className="" controlId="exampleForm.ControlInput1">
            <Form.Label className='fs-4 workSans text-black'>Name</Form.Label>
            <Form.Control className="border-black" type="name" name='name' />
          </Form.Group>
  
-         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+         <Form.Group className="" controlId="exampleForm.ControlInput1">
            <Form.Label className='fs-4 workSans text-black'>Email</Form.Label>
            <Form.Control className="border-black" type="name" name='email' />
          </Form.Group>
@@ -74,6 +84,7 @@ const Contact = () => {
        
 
 
+        </div>
         </div>
   )
 }

@@ -5,16 +5,16 @@
 
   color-scheme: light dark;
   color: black;
-  background-color: white;
 }
 
 body {
+  background-color: #ECBC54;
   margin: 0; 
   /* display: flex; */
   place-items: center;
   min-width: 100%;
   min-height: 100%; 
-  background-color: white;
+  background-size: cover;
 }
 
 .emailForm{
@@ -22,10 +22,16 @@ body {
 }
 .homeCard{
   background-color: #F9728C;
-width: 85%;
+width: 55%;
+/* height: auto; */
 border: #F9728C;
-margin-left: 9%;
+/* margin-left: 9%; */
 } 
+.homeCard.card{
+  /* padding: 0em;
+  margin-bottom: 0; */
+
+}
 
 .loginForm{
   width: 85%;
@@ -52,12 +58,12 @@ margin-left: 9%;
 }
 
 .nav-link{
-  color: #298C9B;
+  color: black;
 
 }
 
 .button-62 {
-  background: linear-gradient(to bottom right, #F9728C, #ECBC54);
+  background: linear-gradient(315deg, #298C9B  30%,#A159F4 );
   border: 0;
   border-radius: 12px;
   color: black;
@@ -78,11 +84,11 @@ margin-left: 9%;
 }
 
 .button-62:not([disabled]):focus {
-  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem .5rem #F9728C, .125rem .125rem 1rem #ECBC54;
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem .5rem #A159F4, .125rem .125rem 1rem #298C9B;
 }
 
 .button-62:not([disabled]):hover {
-  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.1rem -.1rem 0.5rem #F9728C, .1rem .125rem .5rem #ECBC54;
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.1rem -.1rem 0.5rem #A159F4, .1rem .125rem .5rem #298C9B;
 }
 
 

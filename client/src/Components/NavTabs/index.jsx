@@ -13,7 +13,7 @@ function NavTabs() {
     <>
               <Navbar collapseOnSelect expand="lg" className="ml-5 nav-link justify-content-center">
           <Link to='/'>
-            <img className="my-3 mx-5" src="https://firebasestorage.googleapis.com/v0/b/adrienne-steater.appspot.com/o/Images%2FLogo-AS.png?alt=media&token=d6bb496a-a9dc-474a-b2a3-93d05498247d" alt="Adrienne Streater's Logo" style={{ width: 200, height: 150 }} />
+            <img className="my-3 mx-5" src="https://firebasestorage.googleapis.com/v0/b/adrienne-steater.appspot.com/o/Images%2FLogo-AS.png?alt=media&token=d6bb496a-a9dc-474a-b2a3-93d05498247d" alt="Adrienne Streater's Logo" style={{ width: 150, height: 125 }} />
           </Link>
           <Navbar.Brand className="">
           </Navbar.Brand>
@@ -37,10 +37,10 @@ function NavTabs() {
 
             <Nav>
               <Row>
-
+{/* 
               <p className="fs-3 fw-bold text-black text-center  lifeSavers">
                 Follow us on:
-              </p>
+              </p> */}
 <Col>
               <a href="">
                 <img className='' src="https://firebasestorage.googleapis.com/v0/b/adrienne-steater.appspot.com/o/Images%2Fthreads-logo-threads-icon-transparent-free-png.webp?alt=media&token=46a6d4fb-1704-4a43-b09e-79eb750f0e58" alt="Threads Logo"
