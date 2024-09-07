@@ -12,6 +12,8 @@ import AboutTheFamily from './Pages/AboutTheFamily.jsx';
 import Media from './Pages/Media.jsx';
 import Login from './Pages/Login.jsx';
 import SignUp from './Pages/SignUp.jsx';
+import Book1 from './Components/Book1';
+import Book2 from './Components/Book2';
 
 // ReactDOM.createRoot(document.getElementById('root')).render(
 //   <React.StrictMode>
@@ -41,6 +43,14 @@ const router = createBrowserRouter([
       {
         path: '/books',
         element: <Books />
+      },
+      {
+        path: '/books/book1',
+        element: <Book1 />
+      },
+      {
+        path: '/books/book2',
+        element: <Book2 />
       },
       {
         path: '/media',
