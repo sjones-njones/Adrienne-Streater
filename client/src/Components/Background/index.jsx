@@ -2,7 +2,7 @@ import ParticlesBg from 'particles-bg';
 import '../../App.css'
 const Background = () => {
   const color1 = ["#F9943B", "#F9728C", "#F9728C"]
-  const color2 = ["#ECBC54", "#A159F4"]
+  const color2 = ["#298C9B", "#A159F4"]
 
   
 
