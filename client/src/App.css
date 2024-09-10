@@ -133,3 +133,8 @@
     width: 10%;
     height: 10%;
   }
+
+  .navbar-toggler {
+   
+    background-image: linear-gradient(to right, #A159F4, #298C9B , #A159F4);
+  }
