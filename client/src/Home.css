@@ -70,12 +70,12 @@ body {
 
 .btn-hover {
   width: 200px;
-  font-size: 100px;
+  /* font-size: 12px; */
   font-weight: 600;
   color: #fff;
   cursor: pointer;
   margin: 20px;
-  height: 55px;
+  height: 65px;
   text-align: center;
   border: 1px solid  #2d3e50;
   background-size: 300% 100%;
