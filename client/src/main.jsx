@@ -44,10 +44,13 @@ const router = createBrowserRouter([
         path: '/books',
         element: <Books />
       },
-      {
-        path: '/books/book1',
-        element: <Book1 />
-      },
+      // {
+      //   path: '/books/book1',
+      //   element: <Book1 />
+      // },
+    {path: '/books/:bookId', 
+      element: <Book1 /> 
+    },
       {
         path: '/books/book2',
         element: <Book2 />

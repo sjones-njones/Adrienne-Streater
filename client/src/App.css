@@ -135,6 +135,6 @@
   }
 
   .navbar-toggler {
-   
-    background-image: linear-gradient(to right, #A159F4, #298C9B , #A159F4);
+   display: block;
+    background-image: linear-gradient(to right, #F9728C, #A159F4 , #F9728C);
   }
