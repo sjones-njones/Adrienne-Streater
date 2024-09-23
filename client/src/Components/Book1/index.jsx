@@ -1,11 +1,7 @@
 import { Col, Row, Image, Button } from "react-bootstrap";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import BookList from '../../Components/BookList';
-import Swirl from '../../assets/images/swirls-png-33388.png'
+import BookListSmall from '../../Components/BookListSmall';
 import '../../App.css';
-import Book1Pic from '../../assets/images/book1.png'
-
-
 import { useParams } from 'react-router-dom';
 import books from '../../books.js';
 
@@ -13,11 +9,14 @@ const Book1 = () => {
   const { bookId } = useParams()
 
   const newFavBook = books.find((book) => book.id === bookId)
+  
   if (!newFavBook) {
     return <p>{`This page doesn't contain fav Books`}</p>
   }
   return (
     <div>
+      <div className="pb-5">
+
       <h1 className='lifeSavers fw-bolder bookTitle pb-5 mb-5 text-white'>{newFavBook.title}</h1>
       <Row className='mx-auto bookRow' xs={1} md={1} lg={2}>
         <Col className="" key={newFavBook.id} id={newFavBook.id}>
@@ -25,7 +24,7 @@ const Book1 = () => {
 
         </Col>
         <Col>
-          <p className= {`mx-auto workSans ${newFavBook.class}`}>
+          <p className={`mx-auto workSans ${newFavBook.class}`}>
 
             {newFavBook.description}
           </p>
@@ -36,13 +35,15 @@ const Book1 = () => {
             <a className='bookButtonPlacement' href="https://a.co/d/iC3YyYf">
               <Button className="lifeSavers bookButtonPlacement btn-hover">Order From Amazon</Button>
             </a>
-
           </div>
 
 
         </Col>
       </Row>
 
+      </div>
+
+            <BookListSmall  />
 
 
 
