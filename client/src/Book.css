@@ -1,7 +1,42 @@
-.bookTitle{
+.containerClass {
+  width: 50%;
+}
+
+.isDisabled {
+  color: currentColor;
+  cursor: not-allowed;
+  opacity: 0.5;
+  text-decoration: none;
+  width: 200px;
+  height: 300px;
+}
+
+.bookPicSmall {
+  width: 200px;
+  height: 300px;
+
+}
+
+.bookPicSmall:hover {
+  background-position: 100% 0;
+  border: 1px solid #F9728C;
+  box-shadow: 0 6px 15px 0 #F9728C;
+}
+
+.allBooksSmall {
+  /* margin: auto */
+}
+
+.borders {
+  border-color: white;
+  border-style: ridge none none none;
+}
+
+.bookTitle {
   font-size: 45px;
 }
-.bookPic{
+
+.bookPic {
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11,7 +46,7 @@
   position: static;
 }
 
-.bookText{
+.bookText {
   color: white;
   text-align: start;
   padding-top: 40px;
@@ -19,83 +54,127 @@
   width: 65%;
   padding-right: 20px;
   font-size: 165%;
-  }
-  .book2Text{
-    color: white;
-    text-align: start;
-     padding-top: 10px; 
-    padding-bottom: 10px;
-    width: 95%;
-    padding-right: 20px;
-    font-size: 165%; 
-    }
-  
-  .bookButtonPlacement{
-  justify-content: center;
-  }
+}
 
-  @media screen and (min-width: 1350px) {
-    .bookRow{
-      width:75%
-    }
-    }
+.book2Text {
+  color: white;
+  text-align: start;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 95%;
+  padding-right: 20px;
+  font-size: 165%;
+}
+
+.bookButtonPlacement {
+  justify-content: center;
+}
+
+.title {
+  font-size: 350%;
+  color: white;
+}
+
+.author {
+  font-size: 225%;
+  color: white;
+  padding-bottom: 38px;
+}
+
+.bookImage {
+  width: 400px;
+  height: 575px;
+}
+
+@media screen and (min-width: 1350px) {
+   .bookRow {
+    width: 75%
+  }
+}
 
 @media screen and (max-width: 991px) {
-  .bookRow{
-    width:75%
+  .containerClass {
+    width: 65%;
   }
+  .bookPicSmall {
+    padding: 5px 0 5px 0;
+  }
+
+  .isDisabled {
+    padding: 5px 0 5px 0;
+  }
+
+  .bookRow {
+    width: 75%
+  }
+
   .bookPic {
-      width: 400;
-      height: 575px;
+    width: 340px;
+    height: 500px;
+    margin-bottom: 30px;
   }
-  .bookTitle{
+
+  .bookTitle {
     font-size: 30px;
   }
-  .bookText{
+
+  .bookText {
     color: white;
     padding-top: 10px;
     padding-bottom: 0px;
     width: 75%;
     padding-right: 20px;
     font-size: 160%;
-    }
-    .book2Text{
-      color: white;
-      padding-top: 40px;
-      padding-bottom: 0px;
-      width: 100%;
-      padding-right: 20px;
-      font-size: 160%;
-      }
+  }
+
+  .book2Text {
+    color: white;
+    padding-top: 40px;
+    padding-bottom: 0px;
+    width: 100%;
+    padding-right: 20px;
+    font-size: 160%;
+  }
 }
+
 
 @media screen and (max-width: 725px) {
   .bookPic {
-      width: 300px;
-      height: 450px;
+    width: 300px;
+    height: 450px;
   }
-  .bookTitle{
+
+  .bookTitle {
     font-size: 30px;
   }
-  .bookText{
+
+  .bookText {
     color: white;
     padding-top: 10px;
     padding-bottom: 0px;
     width: 75%;
     padding-right: 20px;
     font-size: 140%;
-    }
+  }
 }
 
 @media screen and (max-width: 446px) {
   .bookPic {
     width: 275px;
     height: 450px;
+  }
 }
-}
+
 @media screen and (max-width: 395px) {
+  .containerClass {
+    width: 100%;
+  }
+  .bookPicSmall {
+    padding: 10px 0 10px 0;
+  }
   .bookPic {
     width: 250px;
     height: 400px;
+  }
 }
-}
+
