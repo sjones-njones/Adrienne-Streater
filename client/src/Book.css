@@ -1,5 +1,5 @@
 .containerClass {
-  width: 50%;
+  width: 35%;
 }
 
 .isDisabled {
@@ -29,7 +29,7 @@
 
 .borders {
   border-color: white;
-  border-style: ridge none none none;
+  border-style: dotted none none none;
 }
 
 .bookTitle {
@@ -90,8 +90,21 @@
    .bookRow {
     width: 75%
   }
+  .containerClass {
+    width: 50%
+  }
+}
+@media screen and (max-width: 1330px) {
+   .containerClass {
+   width: 50%
+ }
 }
 
+@media screen and (max-width: 1101px) {
+  .containerClass {
+   width: 50%
+ }
+}
 @media screen and (max-width: 991px) {
   .containerClass {
     width: 65%;

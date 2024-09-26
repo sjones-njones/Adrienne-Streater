@@ -4,7 +4,9 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Row, Col } from "react-bootstrap";
 import '../../App.css';
+import '../../Nav.css';
 import Dropdown from 'react-bootstrap/Dropdown';
+import PlaceholderImage from '../../assets/images/placeHolderPhoto.png';
 
 function NavTabs() {
 
@@ -15,18 +17,20 @@ function NavTabs() {
         <Link to='/'>
           <img className="my-3 mx-5" src="https://firebasestorage.googleapis.com/v0/b/adrienne-steater.appspot.com/o/Images%2FLogo-AS.png?alt=media&token=d6bb496a-a9dc-474a-b2a3-93d05498247d" alt="Adrienne Streater's Logo" style={{ width: 150, height: 125 }} />
         </Link>
+        {/* link for logo with white background
+        https://firebasestorage.googleapis.com/v0/b/adrienne-steater.appspot.com/o/Images%2FLogo-AS.png?alt=media&token=d6bb496a-a9dc-474a-b2a3-93d05498247d */}
         <Navbar.Brand className="">
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse className="toggle" id="responsive-navbar-nav">
           <Nav className="me-auto fs-2 voor">
-            <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/books">Books</Nav.Link>
-            {/* <Nav.Link href="/media">Media</Nav.Link> */}
-            <Nav.Link href="/contact">Contact</Nav.Link>
+            <Nav.Link className={currentPage === '/' ? 'nav-link active' : 'nav-link'} href="/">Home</Nav.Link>
+            
+            <Nav.Link className={currentPage === '/books' ? 'nav-link active' : 'nav-link'}  href="/books">Books</Nav.Link>
+            <Nav.Link className={currentPage === '/contact' ? 'nav-link active' : 'nav-link'} href="/contact">Contact</Nav.Link>
             <NavDropdown title="About" id="collapsible-nav-dropdown">
-              <NavDropdown.Item className="fs-4" href="/aboutTheAuthor">About the Author</NavDropdown.Item>
-              <NavDropdown.Item className="fs-4" href="/aboutTheFamily">
+              <NavDropdown.Item className="fs-3" href="/aboutTheAuthor">About the Author</NavDropdown.Item>
+              <NavDropdown.Item className="fs-3" href="/aboutTheFamily">
                 About the Streater Family
               </NavDropdown.Item>
 
