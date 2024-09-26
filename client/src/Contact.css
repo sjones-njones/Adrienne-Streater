@@ -1,0 +1,40 @@
+
+.btn-contact {
+  width: 175px;
+  font-weight: 600;
+  font-family: 'Work Sans', Georgia, 'Times New Roman', Times, serif;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px;
+  height: 55px;
+  text-align: center;
+  border: 1px solid  #2d3e50;
+  background-size: 300% 100%;
+  border-radius: 10px;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  box-shadow: 0 4px 15px 0 #A159F4;
+  background-image: linear-gradient(to right, #A159F4, #298C9B, #ECBC54, #F9728C);
+
+}
+
+.btn-contact:hover {
+  background-position: 100% 0;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  border: 1px solid  #F9728C;
+  box-shadow: 0 4px 15px 0 #F9728C;
+}
+
+.btn-contact:focus {
+  outline: none;
+  box-shadow: 0 4px 15px 0 #F9728C;
+}
+
+.formBorder{
+  border: 1px solid  #A159F4;
+}

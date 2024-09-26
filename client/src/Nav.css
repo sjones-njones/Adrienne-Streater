@@ -1,0 +1,38 @@
+
+.navbar-toggler {
+  display: block;
+  background-image: linear-gradient(to right, #F9728C, #ECBC54, #F9728C);
+}
+
+.nav-link {
+  color: white;
+}
+
+.nav-link:hover {
+  color: #A159F4
+}
+
+.nav-link:active {
+  color: white
+}
+
+
+.navbar-nav {
+  .nav-link.show {
+    color: white
+  }
+  .nav-link.active{
+    color:white;
+    /* background: linear-gradient(to right, #A159F4, #298C9B, #ECBC54, #F9943B, #F9728C); */
+  }
+}
+.dropdown-menu{
+  background: #298C9B;
+  border-color: #298C9B;
+  border-width: 3px;
+  padding:
+}
+.dropdown-item{
+  color: white;
+  padding: 0%;
+}
