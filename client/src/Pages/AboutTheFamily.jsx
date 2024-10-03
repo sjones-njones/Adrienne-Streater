@@ -1,16 +1,16 @@
 
 import '../Home.css';
-const AboutTheFamily = () => {
+import AboutTheFamilyComp from '../../src/Components/AboutTheFamily';
+import BookListBottom from '../../src/Components/BookListBottom';
 
- 
+const AboutTheFamily = () => {
   return (
-      <div>
-        <p className='fs-1 m-5 fw-bolder text-center lifeSavers'>
-        Coming Soon
-        </p>
-        </div>
-    );
-  };
+    <div>
+      <AboutTheFamilyComp />
+      <BookListBottom />
+    </div>
+  );
+};
 
 
 export default AboutTheFamily;

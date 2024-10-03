@@ -1,0 +1,53 @@
+
+.familyPic {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid #ECBC54;
+  width: 550px;
+  height: 600px;
+  position: static;
+}
+
+.cardFull{
+width: 75%;
+margin: auto;
+background: #ecbc54d0;
+border: none;
+
+}
+.cardImage{
+border-color: #ECBC54;
+width: 75%;
+height: auto;
+margin: auto;
+;
+}
+.cardTitle{
+  font-family: voor;
+  font-size: 100px;
+color: white;
+}
+.cardText{
+font-family: lifeSaver;
+font-size: 40px;
+color: white;
+margin: auto;
+}
+
+@media screen and (max-width: 720px) {
+  .cardTitle{
+    font-size: 80px;
+  }
+  .cardText{
+    font-size: 30px;
+    }
+}
+@media screen and (max-width: 481px) {
+  .cardTitle{
+    font-size: 55px;
+  }
+  .cardText{
+    font-size: 22px;
+    }
+}

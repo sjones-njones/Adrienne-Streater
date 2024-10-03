@@ -19,6 +19,7 @@
 
 .navbar-nav {
   .nav-link.show {
+    
     color: white
   }
   .nav-link.active{
@@ -27,12 +28,28 @@
   }
 }
 .dropdown-menu{
-  background: #298C9B;
-  border-color: #298C9B;
+  background: #A159F4;
+  border-color: #A159F4;
   border-width: 3px;
-  padding:
 }
 .dropdown-item{
   color: white;
   padding: 0%;
+  
 }
+.logo:hover {
+  background-position: 100% 0;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  border: 1px solid  #F9728C;
+  box-shadow: 0 4px 15px 0 #F9728C;
+  background-color: #A159F4;
+}
+
+.logo:focus {
+  outline: none;
+  box-shadow: 0 4px 15px 0 #F9728C;
+}
+

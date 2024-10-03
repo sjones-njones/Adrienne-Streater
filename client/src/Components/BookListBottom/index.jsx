@@ -17,7 +17,7 @@ const BookListSmall = () => {
       allBooksSmall mt-5" >
           {
             books.map((book) => (
-              <Col className="" key={book.id} id={book.id}
+              <Col className="pb-3" key={book.id} id={book.id}
               >
               
                   <Link to={`/books/${book.id}`} className=''>
