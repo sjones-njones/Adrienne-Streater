@@ -1,53 +1,152 @@
+.family {
+  width: 75%;
+  margin: auto;
+  background: #ecbc54ba;
+  border: none;
+  border-radius: 5px;
 
+}
 .familyPic {
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
-  border: 1px solid #ECBC54;
-  width: 550px;
-  height: 600px;
+  /* border: 1px solid #ECBC54; */
+  width: auto;
+  height: 650px;
   position: static;
+  padding:10px;
+  margin: auto;
+  border-radius: 10px;
 }
 
-.cardFull{
-width: 75%;
-margin: auto;
-background: #ecbc54d0;
-border: none;
+
+.title {
+  padding: 10px;
+  font-size: 520%;
+}
+
+.text {
+  color: white;
+  font-size: 200%;
+  display: flex;
+  align-items: center; /* Vertically centers the text */
+  width: 89%;
+  height: 100%;
+}
+@media screen and (max-width: 1115px) {
+  .family {
+    width: 95%;
+  }
+  .familyPic {
+    width: auto;
+    height: 500px;
+    padding:10px;
+  }
+    .title {
+    padding: 5px;
+    font-size: 350%;
+  }
+  
+  .text {
+    font-size: 175%;
+  }
+}
+@media screen and (max-width: 991px) {
+    .text {
+    font-size: 175%;
+    margin: auto;
+    padding: 5px;
+  }
+    
+}
+
+@media screen and (max-width: 678px) {
+  .family {
+    width: 95%;
+  }
+  .familyPic {
+    width: auto;
+    height: 400px;
+  }
+    .title {
+    font-size: 300%;
+  }
+  
+  .text {
+    font-size: 150%;
+  } 
+}
+
+@media screen and (max-width: 458px) {
+  
+  .familyPic {
+    width: auto;
+    height: 300px;
+    padding:10px;
+  }
+    .title {
+    font-size: 250%;
+  }
+  
+  .text {
+    font-size: 130%;
+    
+  }
+}
+.cardFull {
+  width: 75%;
+  margin: auto;
+  background: #ecbc54d0;
+  border: none;
 
 }
-.cardImage{
-border-color: #ECBC54;
-width: 75%;
-height: auto;
-margin: auto;
-;
+
+.cardImage {
+  border-color: #ECBC54;
+  width: 75%;
+  height: auto;
+  margin: auto;
+  
 }
-.cardTitle{
+
+.cardTitle {
   font-family: voor;
   font-size: 100px;
-color: white;
+  color: white;
 }
-.cardText{
-font-family: lifeSaver;
-font-size: 40px;
-color: white;
-margin: auto;
+
+.cardText {
+  font-family: lifeSaver;
+  font-size: 40px;
+  color: white;
+  margin: auto;
+  width: 85%;
+}
+
+@media screen and (max-width: 820px) {
+
+  .cardText {
+    width: 95%
+  }
 }
 
 @media screen and (max-width: 720px) {
-  .cardTitle{
+  .cardTitle {
     font-size: 80px;
   }
-  .cardText{
+
+  .cardText {
     font-size: 30px;
-    }
+  }
 }
+
 @media screen and (max-width: 481px) {
-  .cardTitle{
+  .cardTitle {
     font-size: 55px;
   }
-  .cardText{
+
+  .cardText {
     font-size: 22px;
-    }
+    width: 100%
+  }
 }
