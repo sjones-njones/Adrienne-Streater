@@ -9,15 +9,10 @@ import Toast from 'react-bootstrap/Toast';
 import '../../App.css';
 import '../../Home.css';
 import '../../Contact.css';
-
-import Background from '../Background';
-import ParticlesBg from 'particles-bg';
-
-
+import BookListBottom from '../../Components/BookListBottom';
 
 const Contact = () => {
  const showToastMessage = () => {
-
     toast("Thank you for your message! We will get back to you shortly!"
     );
   };
@@ -65,7 +60,6 @@ const Contact = () => {
          </Button>
          <ToastContainer
          position='top-center'
-
          autoClose={3000}
          hideProgressBar={true}
          newestOnTop={false}
@@ -83,6 +77,7 @@ const Contact = () => {
 
 
         </div>
+        <BookListBottom />
         </div>
   )
 }

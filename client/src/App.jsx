@@ -29,7 +29,7 @@ const App = () => (
         <NavTabs />
         <Outlet />
         {/* <Footer /> */}
-        <FooterII />
+        {/* <FooterII /> */}
         <Background />
 
       </main>

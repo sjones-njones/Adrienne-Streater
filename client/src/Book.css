@@ -29,7 +29,7 @@
 
 .borders {
   border-color: white;
-  border-style: dotted none none none;
+  border-style: dotted none dotted none;
 }
 
 .bookTitle {
@@ -44,6 +44,12 @@
   width: 400px;
   height: 575px;
   position: static;
+}
+
+.bookPic:hover {
+  background-position: 100% 0;
+  border: 1px solid #F9728C;
+  box-shadow: 0 6px 15px 0 #F9728C;
 }
 
 .bookText {
