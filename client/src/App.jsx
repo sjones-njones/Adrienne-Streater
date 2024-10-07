@@ -5,8 +5,9 @@ import {
   createHttpLink,
 } from '@apollo/client';
 import { Outlet } from 'react-router-dom';
-import Footer from "./Components/Footer/index";
+// import Footer from "./Components/Footer/index";
 import FooterII from "./Components/FooterII/index";
+import Footer from '../src/Pages/Footer.jsx';
 
 import Background from './Components/Background';
 import NavTabs from './Components/NavTabs';
@@ -28,9 +29,8 @@ const App = () => (
       <main className="">
         <NavTabs />
         <Outlet />
-        {/* <Footer /> */}
-        {/* <FooterII /> */}
         <Background />
+    <Footer />
 
       </main>
     </div>

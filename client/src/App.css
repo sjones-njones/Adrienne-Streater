@@ -58,15 +58,7 @@
 
 
 
-  .footer {
-    margin-top: 0rem;
-    padding: 0rem;
-    background-color: black;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-  }
+
 
 
   .my-toast-container .Toastify__toast {

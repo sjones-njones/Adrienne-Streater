@@ -23,13 +23,9 @@
   box-shadow: 0 6px 15px 0 #F9728C;
 }
 
-.allBooksSmall {
-  /* margin: auto */
-}
-
 .borders {
   border-color: white;
-  border-style: dotted none dotted none;
+  border-style: dotted none none none;
 }
 
 .bookTitle {
