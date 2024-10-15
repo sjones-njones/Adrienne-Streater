@@ -32,12 +32,14 @@ const Footer = () => {
 
   return (
     <div>
-
+     
       <Form
         className="footer"
         onSubmit={handleOnSubmit}
-      >
-        <Row className="footerForm" xs={1} sm={1} md={3} lg={3} xl={3} xxl={3}>
+        >
+<div className=" subTitleDivFooter">
+        <h1 className="subTitleFooter">Let's Be Whimsical Together!</h1>
+      </div>        <Row className="m-4 footerForm" xs={1} sm={1} md={3} lg={3} xl={3} xxl={3}>
           <Col xs={12} sm={12} md={4} className='updates'>
             Want Updates?</Col>
           <Col className=''>
@@ -52,8 +54,8 @@ const Footer = () => {
           </Col>
 
 
+        <p className='p-2 mx-auto text-white lifeSavers fs-4 fw-bold'>Created by: SJ Designs 2024</p>
         </Row>
-        <p className='text-white lifeSavers fs-5 fw-bold'>Created by: SJ Designs 2024</p>
       </Form>
 
     </div>

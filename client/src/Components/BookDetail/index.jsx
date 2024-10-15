@@ -1,11 +1,11 @@
 import { Col, Row, Image, Button } from "react-bootstrap";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import BookListSmall from '../../Components/BookListSmall';
+import BookListSmall from '../BookListSmall/index.jsx';
 import '../../App.css';
 import { useParams } from 'react-router-dom';
 import books from '../../books.js';
 
-const Book1 = () => {
+const BookDetail = () => {
   const { bookId } = useParams()
 
   const newFavBook = books.find((book) => book.id === bookId)
@@ -53,7 +53,7 @@ const Book1 = () => {
 
 
 
-export default Book1;
+export default BookDetail;
 
 
 

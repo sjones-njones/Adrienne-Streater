@@ -55,7 +55,7 @@ const Contact = () => {
            <Form.Label className='fs-3 fw-bold lifeSavers text-white '>Message</Form.Label>
            <Form.Control required className="formBorder" as="textarea" rows={10} type="name" name='message' col="10" />
          </Form.Group>
-         <Button className="btn-contact fs-5"  type="submit">
+         <Button className="lifeSavers btn-contact fs-5"  type="submit">
            Send
          </Button>
          <ToastContainer
