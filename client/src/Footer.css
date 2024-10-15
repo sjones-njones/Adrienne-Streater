@@ -1,5 +1,5 @@
 .footer {
-  background: #ecbc548d;
+  background: #ecbc5494;
   border: none;
   border-radius: 5px;
   /* position:fixed; */
@@ -94,4 +94,30 @@
     .formBlank {
     width: 95%;
   } 
+}
+.subTitleDivFooter{
+  /* margin-top: 6px; */
+/* width: 90%; */
+margin: auto;
+  /* margin-bottom: 6px; */
+  background-image:  linear-gradient(to right,  #298C9B,
+  #A159F4,
+  #F9728C,
+  #ECBC54, #F9728C,
+  #A159F4,
+  #298C9B);
+  /* filter: blur(1px); */
+
+  border: 3px dotted white;
+  /* border-bottom: 3px dotted white; */
+  padding: 6px;
+
+}
+.subTitleFooter{
+  /* padding: 10px; */
+  font-size: 300%;
+  font-family: voor ;
+color:  white;
+
+/* #298C9B, #A159F4; */
 }
