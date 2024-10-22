@@ -26,14 +26,14 @@ function NavTabs() {
 
             <Nav.Link className={currentPage === '/books' ? 'nav-link active' : 'nav-link'} href="/books">Books</Nav.Link>
             <Nav.Link className={currentPage === '/contact' ? 'nav-link active' : 'nav-link'} href="/contact">Contact</Nav.Link>
+              <Nav.Link className={currentPage === '/support' ? 'nav-link active' : 'nav-link'} href="/support">Support</Nav.Link>
             <NavDropdown title="About" id="collapsible-nav-dropdown">
               <NavDropdown.Item className="fs-3" href="/aboutTheAuthor">About the Author</NavDropdown.Item>
               <NavDropdown.Item className="fs-3" href="/aboutTheFamily">
                 About the Streater Family
               </NavDropdown.Item>
-
             </NavDropdown>
-
+              <Nav.Link className={currentPage === '/admin' ? 'nav-link active' : 'nav-link'} href="/admin">Admin</Nav.Link>
           </Nav>
           <Dropdown.Divider />
 

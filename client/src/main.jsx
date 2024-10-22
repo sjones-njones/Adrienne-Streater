@@ -11,6 +11,8 @@ import AboutTheAuthor from './Pages/AboutTheAuthor.jsx';
 import AboutTheFamily from './Pages/AboutTheFamily.jsx';
 import Media from './Pages/Media.jsx';
 import Login from './Pages/Login.jsx';
+import Support from './Pages/Support.jsx';
+import Admin from './Pages/Admin.jsx';
 import SignUp from './Pages/SignUp.jsx';
 import BookDetail from './Components/BookDetail';
 
@@ -34,6 +36,10 @@ const router = createBrowserRouter([
       {
         path: '/contact',
         element: <Contact />
+      },
+      {
+        path: '/admin',
+        element: <Admin />
       },
       {
         path: '/signup',
@@ -63,6 +69,10 @@ const router = createBrowserRouter([
       {
         path: '/login',
         element: <Login />
+      },
+      {
+        path: '/support',
+        element: <Support />
       },
     ]
   },

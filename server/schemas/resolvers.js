@@ -1,5 +1,5 @@
 const { GraphQLError } = require("graphql");
-const { Book, Blog, Video, List } = require("../models");
+const { Book, Blog, Video, List, SupportEvent } = require("../models");
 
 const resolvers = {
   Query: {
@@ -28,12 +28,25 @@ const resolvers = {
     list: async (_, { email }) => {
       return List.findOne({ email: email });
     },
-
+    supportEvents: async () => {
+      return SupportEvent.find({});
+    },
+    supportEvent: async (_, { supportEventId }) => {
+      return SupportEvent.findOne({ _id: supportEventId });
+    },
   },
   Mutation: {
     addToList: async (_, args) => {
       const list = await List.create(args);
       return list;
+    },
+
+    addSupportEvent: async (_, args) => {
+      const supportEvent = await SupportEvent.create(args);
+      return supportEvent;
+    },
+    removeSupportEvent: async (_, { supportEventId }) => {
+      return SupportEvent.findOneAndDelete({ _id: supportEventId });
     },
     removeFromList: async (_, { email }) => {
       return List.findOneAndDelete({ email: email });
