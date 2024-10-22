@@ -1,33 +1,25 @@
-import HomeInfo from "../Components/HomeInfo";
-import BookList from '../Components/BookList';
-import AboutTheAuthor from '../Components/AboutTheAuthor';
-import AboutTheFamily from '../Components/AboutTheFamily';
 import '../../src/HomePage.css';
 import { Image, Card, Row, Col, Container } from "react-bootstrap";
-import Carousel from 'react-bootstrap/Carousel';
-
 import { Link } from "react-router-dom";
 import '../../src/Book.css';
 import books from '../../src/books.js';
 const Home = () => {
   return (
-
     <div>
-
+    
       <div>
-        <h1 className="headTitle">The Whimsical Paper Company</h1>
-
-        <div className="subTitleDiv">
-
-        </div>
+        <h1 className="voor headTitle">
+The Whimsical Paper Company
+        </h1>
       </div>
       <div className="">
         <div className="bookDiv">
+
           <div className="">
-            <h1 className=" voor title"> The Whimsical Journey Series</h1>
           </div>
           <Container fluid="md">
 
+            <h1 className=" voor title">Books by Adrienne C. Streater</h1>
             <Row xs={1} sm={1} md={2} lg={2} className="w-75 mx-auto allBooks">
               {
                 books && books.map((book) => (
@@ -39,12 +31,12 @@ const Home = () => {
                   </Col>
                 ))}
             </Row>
-            <h3 className="authorHome lifeSavers">By: Adrienne Streater</h3>
+            <h3 className="authorHome lifeSavers">The Whimsical Journey Series</h3>
           </Container>
         </div>
       </div>
 
-      <div className=" subTitleDiv">
+      <div className=" subTitleDivWhite">
       </div>
       <div className=' '>
 
@@ -54,16 +46,13 @@ const Home = () => {
           <Link to={`/aboutTheAuthor`} className=''>
             <Card.Img className='cardImageHome' src=" https://firebasestorage.googleapis.com/v0/b/adrienne-steater.appspot.com/o/Images%2Ffamily%20pics%2FIMG_20240926_112943.jpg?alt=media&token=61d6af39-b8bc-4422-937f-d223d6968580" />
           </Link>
-          <Row className="lifeSavers w-75 mx-auto ASDescription">
+          <Row className="lifeSavers w-50 mx-auto ASDescription">
             <Col>
-              positive words
-            </Col>
+              Wife  </Col>
             <Col>
-              positive words
-            </Col>
+Mother            </Col>
             <Col>
-              positive words
-            </Col>
+Author            </Col>
           </Row>
           <Card.Body>
             <Card.Text className=' lifeSavers cardText'>
@@ -75,7 +64,7 @@ const Home = () => {
 
       </div>
 
-      <div className=" subTitleDiv">
+      <div className=" subTitleDivWhite">
       </div>
 
       <div className=''>
@@ -92,7 +81,23 @@ const Home = () => {
           </Card.Body>
         </Card>
       </div>
-      <div></div>
+      
+      <div className=" subTitleDivWhite">
+      </div>
+      <div>
+        <Card
+          className='supportHome'>
+          <Card.Title className='cardTitle'> Traveling Support for Special Needs Families</Card.Title>
+          <Link to={`/support`} className=''>
+            {/* <Card.Img className='cardImageHome' src="kjhjhki" /> */}
+          </Link>
+          <Card.Title className='cardTitle'>Coming Soon</Card.Title>
+          <Card.Body>
+            <Card.Text className=' lifeSavers cardText'>
+            </Card.Text>
+          </Card.Body>
+        </Card>
+      </div>
     </div>
   )
 

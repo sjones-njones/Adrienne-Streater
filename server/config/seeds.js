@@ -41,6 +41,7 @@ db.once('open', async () => {
 
 
   console.log('blog seeded');
+  
 
   process.exit();
 });
